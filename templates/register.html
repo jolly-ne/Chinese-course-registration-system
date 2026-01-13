@@ -40,6 +40,9 @@
 
 <form method="POST">
     <h2>User Registration</h2>
+    {% if error %}
+    <p style="color: #c62828; text-align: center; margin: 10px 0 0;">{{ error }}</p>
+    {% endif %}
     <input type="text" name="name" placeholder="Full Name" required>
     <input type="email" name="email" placeholder="Email" required>
     <input type="password" name="password" placeholder="Password" required>
